@@ -1,6 +1,6 @@
 FROM mcr.microsoft.com/dotnet/sdk:9.0-alpine as builder
 WORKDIR /aoc
-COPY ./Day01.csproj .
+COPY ./Day03.csproj .
 RUN dotnet restore -r linux-musl-x64
 COPY ./input.txt .
 COPY ./Program.cs .
